@@ -15,10 +15,10 @@ jobs:
         go_version: ['1.18', '1.17', '>=1.18']
         os: ['ubuntu-latest', 'windows-10']
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v20
 
     - name: Set up Go
-      uses: actions/setup-go@v3
+      uses: actions/setup-go@v20
       with:
         go-version: ${{ matrix.go_version }}
       
@@ -39,6 +39,6 @@ jobs:
       matrix:
         os: ['ubuntu-latest', 'windows-10']
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v20
     - name: Build
       run: go build -v main.go
