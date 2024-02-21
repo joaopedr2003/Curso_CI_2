@@ -17,7 +17,7 @@ jobs:
     - name: Download a Build Artifact
       uses: actions/download-artifact@v4.1.2
       with:
-         name: programa_go        
+        name: programa_go        
 # colocando o docker login, para mandar pro docker hub
     - name: Docker Login
   # You may pin to the exact commit or the version.
