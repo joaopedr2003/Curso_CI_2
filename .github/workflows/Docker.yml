@@ -9,6 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      
       - name: setup Docker Build
         uses: docker/setup-buildx-action@v3.0.0
 
@@ -18,7 +19,7 @@ jobs:
         uses: actions/download-artifact@v4.1.2
         with:
           name: programa
-          path: main
+
 
       # colocando o docker login, para mandar pro docker hub
 
